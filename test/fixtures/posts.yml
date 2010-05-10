@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  content: MyText
+  post_date: 2010-03-05
+
+two:
+  name: MyString
+  content: MyText
+  post_date: 2010-03-05

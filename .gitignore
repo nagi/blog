@@ -1,0 +1,8 @@
+*.dia
+*.swp
+mkmf.log
+log/*.log
+tmp/**/*
+untracked/*
+config/database.yml
+config/environment.rb
