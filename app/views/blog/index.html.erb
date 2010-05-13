@@ -1,14 +1,12 @@
-<% title("Blog", false)%>
-<%= image_tag "logo.png" %>
+<% title("Nagi Systems Ltd - Blog", false)%>
 
 <% @posts.each do | p | %>
-
-  <div id="post_title">
-    <hr>
+  <div id="post_<%=p.id%>">
+    <hr/>
     <%= image_tag "rule_l.png" %>
     <%= p.name %>
     <%= image_tag "rule_r.png" %>
   </div>
   <h4><%= p.post_date.strftime("%d %B %Y")%></h4>
-  <p><%= p.content %></p>
+  <%= p.content %>
 <% end %>
