@@ -15,7 +15,9 @@
         <%- end -%>
 
         <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
+        <div id="auto_title">
+          <h1><%=h yield(:title) %></h1>
+        </div>
         <%- end -%>
 
         <div id="content">

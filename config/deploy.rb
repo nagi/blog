@@ -41,7 +41,6 @@ namespace :deploy do
     run "chmod 755 #{release_path}/script/server"
     run "touch #{release_path}/log/production.log"
     run "chmod 666 #{release_path}/log/production.log"
-    deploy.build_native_RedCloth_components
     deploy.reboot_mongrel
   end
 
@@ -52,10 +51,5 @@ namespace :deploy do
    desc "restart mongrel"
    task :reboot_mongrel do
      run "cd ~/script && ./restart-mon.sh"
-   end
-
-   desc "Build redcloth native components in vendoe/gems"
-   task :build_native_RedCloth_components do
-     run "cd #{release_path} && /usr/local/rvm/rubies/ruby-1.8.6-p369/bin/rake gems:build"
    end
 end

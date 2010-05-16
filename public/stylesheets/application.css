@@ -166,9 +166,15 @@ div.selected{
 
 /* nifty-layout markup */
 
+#auto_title {
+  margin-left:90px;
+}
 #flash_notice, #flash_error {
   padding: 5px 8px;
-  margin: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #flash_notice {
