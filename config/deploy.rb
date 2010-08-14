@@ -28,7 +28,7 @@ namespace :deploy do
    task :finishing_touches, :roles => :app do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/environment.rb #{release_path}/config/environment.rb"
-    run "ln -nfs #{shared_path}/public/.htaccess #{release_path}/public/.htaccess"
+    run "ln -nfs #{shared_path}/.htaccess #{release_path}/public/.htaccess"
 #    run "chmod 755 #{release_path}/public/dispatch.cgi"
 #    run "chmod 755 #{release_path}/public/dispatch.fcgi"
 #    run "chmod 755 #{release_path}/public/dispatch.rb"
