@@ -29,9 +29,14 @@
 }
 
 #RB_loading {
+  background: white;
+  border:2px solid #2d2d2d;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   margin: 0 auto 0 auto;
-	width: 250px;
-	height: 250px;
+	width: 920px;
+	height: 600px;
   text-align: center;
   background: #FFF url(../images/redbox_spinner.gif) no-repeat center center;
 }

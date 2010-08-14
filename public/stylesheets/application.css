@@ -7,11 +7,11 @@ a img {
 }
 
 body {
-  background:transparent url(/images/logo_bg.gif) no-repeat;
   background-color:#FFFFFF;
   color:#3D3D3D;
   font-family:Verdana,Helvetica,Arial;
   font-size:14px;
+  margin:0px;
 }
 
 .clear {
@@ -125,6 +125,12 @@ div.selected{
   background:transparent url(/images/navigation_hover.png) repeat-x;
 }
 
+#site_container{
+  background:transparent url(/images/logo_bg.gif) no-repeat;
+  margin-left: auto ;
+  margin-right: auto ;
+  width:1000px;
+}
 #shadow {
   background:#FFFFFF url(/images/shadow_sides.png) repeat-y scroll center top;
   clear:both;

@@ -11,32 +11,35 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <%= render :partial => 'global/navigation_bar', :locals => {:title => yield(:title)} %>
-    <div id="shadow">
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-        <%- end -%>
+    <div id="site_container">
+      <%= render :partial => 'global/navigation_bar', :locals => {:title => yield(:title)} %>
+      <div id="shadow">
+        <%- flash.each do |name, msg| -%>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <%- end -%>
 
-        <%- if show_title? -%>
-        <div id="auto_title">
-          <h1><%=h yield(:title) %></h1>
-        </div>
-        <%- end -%>
-
-        <div id="content">
-          <%= yield %>
-        </div>
-
-        <div id="footer">
-          <div id="footer_content">
-            <ul>
-              <li><a href="Home">Home</a>  </li>
-              <li><a href="Portfolio">Portfolio</a>  </li>
-              <li><a href="Contact">Contact</a>  </li>
-              <li><a href="Blog">Blog</a>  </li>
-            </ul>
+          <%- if show_title? -%>
+          <div id="auto_title">
+            <h1><%=h yield(:title) %></h1>
           </div>
-        </div> 
+          <%- end -%>
+
+          <div id="content">
+            <%= yield %>
+          </div>
+
+          <div id="footer">
+            <div id="footer_content">
+              <ul>
+                <li><a href="Home">Home</a>  </li>
+                <li><a href="Portfolio">Portfolio</a>  </li>
+                <li><a href="Contact">Contact</a>  </li>
+                <li><a href="Blog">Blog</a>  </li>
+              </ul>
+            </div>
+          </div> 
+
+        </div>
 
       </div>
     </body>

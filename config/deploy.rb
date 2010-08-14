@@ -41,15 +41,15 @@ namespace :deploy do
     run "chmod 755 #{release_path}/script/server"
     run "touch #{release_path}/log/production.log"
     run "chmod 666 #{release_path}/log/production.log"
-    deploy.reboot_mongrel
+    # deploy.reboot_mongrel
   end
 
-   desc "override passenger restart task"
-   task :restart do
-   end
-
-   desc "restart mongrel"
-   task :reboot_mongrel do
-     run "cd ~/script && ./restart-mon.sh"
-   end
+#   desc "override passenger restart task"
+#   task :restart do
+#   end
+#
+#   desc "restart mongrel"
+#   task :reboot_mongrel do
+#     run "cd ~/script && ./restart-mon.sh"
+#   end
 end
