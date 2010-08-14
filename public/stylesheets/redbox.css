@@ -1,0 +1,63 @@
+#RB_overlay {
+  position: absolute;
+  z-index:100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height:100%;
+  background-color: #000;
+  opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+#RB_redbox {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+#RB_window {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 102;
+	line-height: 0;
+        top: 30px;
+}
+
+#RB_loading {
+  margin: 0 auto 0 auto;
+	width: 250px;
+	height: 250px;
+  text-align: center;
+  background: #FFF url(../images/redbox_spinner.gif) no-repeat center center;
+}
+
+#RB_close {
+  float: right;
+  position: relative;
+  cursor:pointer;
+}
+
+#RB_shot {
+  cursor:pointer;
+}
+
+#RB_inner {
+  background: white;
+  border:2px solid #2d2d2d;
+  float: none;
+  line-height: 1;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 920px;
+}
+
+.redbox_contents {
+  margin: 0 auto;
+  text-align: left;
+}
