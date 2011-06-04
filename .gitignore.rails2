@@ -1,0 +1,10 @@
+*.dia
+*.swp
+mkmf.log
+log/*.log
+tmp/**/*
+untracked/*
+config/database.yml
+config/environment.rb
+db/*.sqlite3
+db/*.sqlite3-journal
