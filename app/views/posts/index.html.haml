@@ -1,0 +1,15 @@
+= content_for :title, 'Posts'
+
+%table
+  %tr
+    %th Post Date
+    %th Name
+  - @posts.each do |post|
+    %tr
+      %td= h post.post_date.strftime("%d-%m-%y")
+      %td= h post.name
+      %td= link_to 'Edit', edit_post_url(post)
+      %td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+
+%p
+  = link_to "New Post", new_post_url

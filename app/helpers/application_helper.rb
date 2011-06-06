@@ -7,4 +7,9 @@ module ApplicationHelper
       "tab"
     end
   end
+
+  def markdown(markup)
+    mark_down = RDiscount.new(markup)
+    mark_down.to_html
+  end
 end

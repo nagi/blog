@@ -7,4 +7,4 @@
     = post.name
     = image_tag "rule_r.png"
   %h4= post.post_date.strftime("%d %B %Y")
-  = post.content
+  != markdown(post.content)
