@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate if Rails.env.production?
 
   def authenticate
     authenticate_or_request_with_http_basic('Administration') do |username, password|
