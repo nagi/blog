@@ -18,12 +18,6 @@
           <%= content_tag :div, msg, :id => "flash_#{name}" %>
           <%- end -%>
 
-          <%- if show_title? -%>
-          <div id="auto_title">
-            <h1><%=h yield(:title) %></h1>
-          </div>
-          <%- end -%>
-
           <div id="content">
             <%= yield %>
           </div>

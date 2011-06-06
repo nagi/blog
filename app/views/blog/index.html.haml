@@ -1,0 +1,10 @@
+- content_for(:title, 'Nagi Systems Ltd - Blog')
+
+- @posts.each do |post|
+  %div{:id => "post_#{post.id}"}
+    %hr
+    = image_tag "rule_l.png"
+    = post.name
+    = image_tag "rule_r.png"
+  %h4= post.post_date.strftime("%d %B %Y")
+  = post.content
