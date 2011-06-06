@@ -2,6 +2,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
+gem 'jquery-rails'
 
 group 'development' do
   gem 'ruby-debug19'
