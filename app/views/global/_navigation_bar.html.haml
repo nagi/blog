@@ -1,0 +1,15 @@
+#logo
+  = link_to(image_tag('logo.png'), home_url)
+
+#navigation
+  .left
+  %div{:class => nav_button_class('home', title)}
+    = link_to 'HOME', home_url
+  %div{:class => nav_button_class('portfolio', title)}
+    = link_to 'PORTFOLIO', portfolio_url
+  %div{:class => nav_button_class('contact', title)}
+    = link_to 'CONTACT', contact_url
+  %div{:class => nav_button_class('blog', title)}
+    = link_to 'BLOG', blog_url
+#bar_padding
+#bar_right
