@@ -1,6 +1,6 @@
 class PostsController < AdminController
   def index
-    @posts = Post.all(:order => "post_date DESC")
+    @posts = Post.order("post_date DESC")
   end
   
   def new
