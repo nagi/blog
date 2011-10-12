@@ -4,4 +4,6 @@ $(function() {
 	$('a.lightbox_a').lightBox({fixedNavigation:true});
 	$('a.lightbox_b').lightBox({fixedNavigation:true});
 	$('a.lightbox_c').lightBox({fixedNavigation:true});
+	$('a.lightbox_d').lightBox({fixedNavigation:true});
+	$('a.lightbox_e').lightBox({fixedNavigation:true});
 });

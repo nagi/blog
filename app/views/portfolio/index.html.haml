@@ -1,19 +1,6 @@
 - content_for(:title, 'Nagi Systems Ltd Software Development - Portfolio')
 
 .column_1
-  %h3 Quiz Content Entry System
-  %p Quipper have the goal of helping people learn using a Question and Answer format. Once a quiz is entered using the entry system, a Android app, iPhone app and Facebook app allow users to play fun quizzes, and learn at the same time.
-  %p The entry system was created with Ruby On Rails.
-
-.column_2
-  %a.lightbox_a{:href => "/images/screenshots/quipper_1.png"}
-    = image_tag('screenshot_q1.png')
-
-.column_3
-  %a.lightbox_a{:href => "/images/screenshots/quipper_2.png"}
-    = image_tag('screenshot_q2.png')
-
-.column_1
   %h3 Store Simulation Software
   %p Nagi Systems worked in partnership with Retail Human Factors and Fujitsu to develop their store simulation product. The product allows retailers to experiment with various store configurations like their staffing schedule or the number of checkouts using software.
   %p I have programmed a number of models for Retail Human Factors, employing C#, WPF and 3D Modeling to create cutting edge tools.
@@ -27,15 +14,28 @@
     = image_tag('screenshots/sim_graphs_thumb.png')
 
 .column_1
+  %h3 Quiz Content Entry System
+  %p Quipper have the goal of helping people learn using a Question and Answer format. Once a quiz is entered using the entry system, a Android app, iPhone app and Facebook app allow users to play fun quizzes, and learn at the same time.
+  %p Nagi Systems Ltd worked as part of a five man agile team in order to build this system, which used many of the webs latest technologies.
+
+.column_2
+  %a.lightbox_b{:href => "/images/screenshots/quipper_fp.png"}
+    = image_tag('/images/screenshots/quipper_fp_thumb.png')
+
+.column_3
+  %a.lightbox_b{:href => "/images/screenshots/quipper_question.png"}
+    = image_tag('/images/screenshots/quipper_question_thumb.png')
+
+.column_1
   %h3 Online Accounts Viewer
   %p This application allows customers to view their account information online. In particular, they can view their unpaid invoices. Larger customers may have hundreds of unpaid invoices at any one time, and in the past customers were frequently phoning to request this information be collated and posted to them.
 
 .column_2
-  %a.lightbox_b{:href => "/images/screenshots/inv_login.png"}
+  %a.lightbox_c{:href => "/images/screenshots/inv_login.png"}
     = image_tag('/images/screenshots/inv_login_thumb.png')
 
 .column_3
-  %a.lightbox_b{:href => "/images/screenshots/inv_data.png"}
+  %a.lightbox_c{:href => "/images/screenshots/inv_data.png"}
     = image_tag('/images/screenshots/inv_data_thumb.png')
 
 .column_1
@@ -43,19 +43,21 @@
   %p This product is an interactive web application useful for managing staff rotas. The site was created using Ruby in Rails. Contact info@nagisystems.com to arrange an online demonstration.
 
 .column_2
-  %a.lightbox_c{:href => "/images/screenshots/planner_wall.png"}
+  %a.lightbox_d{:href => "/images/screenshots/planner_wall.png"}
     = image_tag('screenshots/planner_wall_thumb.png')
 
 .column_2
-  %a.lightbox_c{:href => "/images/screenshots/planner_temps.png"}
+  %a.lightbox_d{:href => "/images/screenshots/planner_temps.png"}
     = image_tag('screenshots/planner_temps_thumb.png')
 
 .column_1
   %h3 Timeline Maker
-  %p!= "This web application enables people to create and share timeline graphs. It was created with Ruby On Rails."
+  %p This web application enables people to create and share timeline graphs. It was created with Ruby On Rails.
 
 .column_2
-  = link_to image_tag('timeliner_1.png'), "http://timeline-maker.com"
+  %a.lightbox_e{:href => "/images/screenshots/timeliner_fp.png"}
+    = image_tag('/images/screenshots/timeliner_fp_thumb.png')
 
 .column_3
-  = link_to image_tag('timeliner_2.png'), "http://timeline-maker.com"
+  %a.lightbox_e{:href => "/images/screenshots/timeliner_chart.png"}
+    = image_tag('/images/screenshots/timeliner_chart_thumb.png')
